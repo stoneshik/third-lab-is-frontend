@@ -1,0 +1,54 @@
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    width: 500px;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.title {
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.75rem;
+}
+
+.label {
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.input {
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.feedback {
+    margin-top: 0.75rem;
+}
+
+.error {
+    color: #b91c1c;
+}
+
+.success {
+    color: #065f46;
+}

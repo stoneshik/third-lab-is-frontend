@@ -1,0 +1,86 @@
+$border_color: #ccc;
+
+.form-wrapper {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.form {
+    width: 500px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.title {
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.75rem;
+
+    button {
+        margin-left: 0.5rem;
+        width: 40px;
+        height: 40px;
+        background-color: $bg-primary-button-active;
+        color: $color-button-text-active;
+    }
+
+    button:hover {
+        background-color: $bg-primary-button;
+        color: $color-button-text;
+    }
+}
+
+.label {
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.input {
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+select {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid $border_color;
+    background-color: $bg-primary-button-active;
+    color: $color-button-text-active;
+    font-weight: 600;
+}
+
+.actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.feedback {
+    margin-top: 0.75rem;
+}
+
+.error {
+    color: #b91c1c;
+}
+
+.success {
+    color: #065f46;
+}
+
+table {
+    margin-right: 1rem;
+}
