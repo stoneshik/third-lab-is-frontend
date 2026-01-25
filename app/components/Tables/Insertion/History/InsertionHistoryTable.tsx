@@ -35,6 +35,8 @@ export function InsertionHistoryTable({ insertionHistories } : InsertionHistoryT
                 const message = createMessageStringFromErrorMessage(error);
                 setErrorMessage(message);
                 return;
+            } else {
+                setErrorMessage("Не получилось скачать файл");
             }
         }
     };
