@@ -6,5 +6,7 @@ export interface InsertionHistory {
     endDate: string;
     status: InsertionHistoryStatus;
     login: string;
-    numberObjects: number;
+    numberObjects: number | null;
+    fileObjectKey: string | null;
+    fileCommitted: boolean;
 }
