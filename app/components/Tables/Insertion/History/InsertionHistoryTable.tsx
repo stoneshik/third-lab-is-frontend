@@ -68,9 +68,14 @@ export function InsertionHistoryTable({ insertionHistories } : InsertionHistoryT
                         <td>{insertionHistory.login}</td>
                         <td>{insertionHistory.numberObjects ?? "-"}</td>
                         {insertionHistory.fileObjectKey !== null &&
+                        !insertionHistory.fileObjectKey.startsWith("tmp/") &&
                         <td onClick={() => handlingDownloadFile(insertionHistory.id, insertionHistory.fileObjectKey ?? "")}>
                             <Link to="#">{insertionHistory.fileObjectKey}</Link>
                         </td>
+                        }
+                        {insertionHistory.fileObjectKey !== null &&
+                        insertionHistory.fileObjectKey.startsWith("tmp/") &&
+                        <td>{insertionHistory.fileObjectKey}</td>
                         }
                         {insertionHistory.fileObjectKey === null && <td>-</td>}
                         <td>{insertionHistory.fileCommitted === true ? "Да" : "Нет"}</td>
